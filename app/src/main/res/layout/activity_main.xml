@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/cityName_EdtTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getCity_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Check the weather"
+        app:layout_constraintEnd_toEndOf="@+id/cityName_EdtTxt"
+        app:layout_constraintStart_toStartOf="@+id/cityName_EdtTxt"
+        app:layout_constraintTop_toBottomOf="@+id/cityName_EdtTxt" />
+
+    <ListView
+        android:id="@+id/reportModel_ListView"
+        android:layout_width="409dp"
+        android:layout_height="565dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="165dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/getCity_Button"
+        app:layout_constraintStart_toStartOf="@+id/getCity_Button"
+        app:layout_constraintTop_toBottomOf="@+id/getCity_Button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
